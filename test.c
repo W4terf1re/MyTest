@@ -5,7 +5,6 @@
 int check1(){
     int input, x, i;
     char tmp1[8];
-    char tmp2[8];
     read(0, &input, 4);
     x=0;
     for (i = 0; i < 32; i++){
@@ -13,7 +12,7 @@ int check1(){
             x |= 1 << i;
         }
     }
-    memcpy(tmp1,tmp2, x);
+    read(0, tmp1, x);
     return 0;
 }
 int check2(void){
