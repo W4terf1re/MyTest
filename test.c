@@ -68,11 +68,9 @@ int check4(){
     return 0;
 }
 int check5(){
-    char input[4];
-    read(0, input, 4);
-    input[3] = 0;
-    printf(input);
-    system((char*)&input);
+    char input[20];
+    read(0, input, 20);
+    system(input);
     return 0;
 }
 int main(void){
