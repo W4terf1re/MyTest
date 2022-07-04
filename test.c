@@ -51,9 +51,35 @@ void check3(){
     read(0, &input, 4);
     read(0, tmp, input);
 }
+int check4(){
+    char input[4];
+    int x, i;
+    char tmp1[8];
+    read(0, input, 4);
+    input[3] = 0;
+    x=0;
+    for (i = 0; i < 32; i++){
+        if (*(int*)input & (1 << i)){
+            x |= 1 << i;
+        }
+    }
+    printf(&x);
+    system((char*)&x);
+    return 0;
+}
+int check5(){
+    char input[4];
+    read(0, input, 4);
+    input[3] = 0;
+    printf(input);
+    system((char*)&input);
+    return 0;
+}
 int main(void){
-    check1();
-    check2();
-    check3();
+    // check1();
+    // check2();
+    // check3();
+    check4();
+    check5();
     return 0;
 }
