@@ -46,11 +46,10 @@ int check2(void){
     return 0;
 }
 void check3(){
-    int a;
-    int b;
     int input;
+    char tmp[8];
     read(0, &input, 4);
-    memcpy(&a, &b, input);
+    read(0, tmp, input);
 }
 int main(void){
     check1();
