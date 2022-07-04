@@ -46,8 +46,16 @@ int check2(void){
     }
     return 0;
 }
+void check3(){
+    int a;
+    int b;
+    int input;
+    read(0, &input, 4);
+    memcpy(&a, &b, input);
+}
 int main(void){
     check1();
     check2();
+    check3();
     return 0;
 }
